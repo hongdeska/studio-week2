@@ -37,6 +37,9 @@
     // Create a variable called "map" to house your Leaflet map and all of its functionality
     var map = L.map('mapId').setView([37.754700, -122.420790], 14);
 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+   }).addTo(map);
     /* 
      * Use Leaflet's tileLayer method to create a new tile layer, then add it to the map 
      ** Reference: https://leafletjs.com/reference-1.6.0.html#tilelayer
